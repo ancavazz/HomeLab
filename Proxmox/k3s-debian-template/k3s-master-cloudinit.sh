@@ -8,7 +8,7 @@ VMID=9500
 # Choose a name for the VM
 TEMPLATE_NAME=K3S-Master
 # Choose the disk image to import
-DISKIMAGE=debian-12-genericcloud-amd64.qcow2
+DISKIMAGE=debian-12-generic-amd64.qcow2
 # Select Host disk
 HOST_DISK=local-lvm
 # Set dimension disk

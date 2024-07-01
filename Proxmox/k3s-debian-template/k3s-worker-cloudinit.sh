@@ -1,4 +1,4 @@
-f [ ! -f debian-12-generic-amd64.qcow2 ]
+if [ ! -f debian-12-generic-amd64.qcow2 ]
         then
         wget https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2
         fi
@@ -8,11 +8,11 @@ VMID=9502
 # Choose a name for the VM
 TEMPLATE_NAME=K3S-Worker
 # Choose the disk image to import
-DISKIMAGE=debian-12-genericcloud-amd64.qcow2
+DISKIMAGE=debian-12-generic-amd64.qcow2
 # Select Host disk
 HOST_DISK=local-lvm
 # Set dimension disk
-DISKDIM=100G
+DISKDIM=32G
 # Set core number
 CORE=2
 # Set ram dimension
